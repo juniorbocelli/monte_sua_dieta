@@ -20,7 +20,7 @@ class DatabaseConnection
 
 		// DSN = Data Source Name, é a string de conexao
 		$dsn = "mysql:host=$host;dbname=$dbname;charset=utf8";
-		// ATTR_PERSISTENT deixa uma conexão sempre aberta, isso pode dar problema (comentado em aula)
+		// ATTR_PERSISTENT deixa uma conexão sempre aberta, isso pode dar problema
 		// $driverOptions = array(PDO::ATTR_PERSISTENT => true);
 		try {
 			$this->conn = new PDO($dsn, $username, $password);
