@@ -1,9 +1,10 @@
 <?php
-class ModelUser {
+class ModelUser
+{
 
-	public $name;
-	public $email; 
-	public $password;
+    public $name;
+    public $email;
+    public $password;
 
     /**
      * Popula um obj funcionario com os dados vindos da tabela funcionario. Funciona como um construtor
@@ -12,7 +13,8 @@ class ModelUser {
      *
      * @return não há retorno.
      */
-    public function setUserFromDatabase($row){
+    public function setUserFromDatabase($row)
+    {
         $this->setEmail($row["email"])
             ->setName($row["name"])
             ->setPassword($row['password']);
@@ -23,7 +25,8 @@ class ModelUser {
      *
      * @return não há retorno.
      */
-    function setUserFromPOST(){
+    function setUserFromPOST()
+    {
         $this->setEmail($_POST['email'])
             ->setName($_POST['name'])
             ->setPassword(md5($_POST['password']));
@@ -34,24 +37,24 @@ class ModelUser {
      *
      * @return mixed
      */
-     public function getEmail()
-     {
-         return $this->email;
-     }
- 
-     /**
-      * Sets the value of nome.
-      *
-      * @param mixed $nome the nome
-      *
-      * @return self
-      */
-     public function setEmail($email)
-     {
-         $this->email = $email;
+    public function getEmail()
+    {
+        return $this->email;
+    }
 
-         return $this;
-     }
+    /**
+     * Sets the value of nome.
+     *
+     * @param mixed $nome the nome
+     *
+     * @return self
+     */
+    public function setEmail($email)
+    {
+        $this->email = $email;
+
+        return $this;
+    }
 
     /**
      * Gets the value of idFuncionario.

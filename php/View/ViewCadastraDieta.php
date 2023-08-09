@@ -14,7 +14,7 @@ $keepNotLogged = true;
     </div>
 
     <form id="postInserirDieta" method="POST" action="postInserirDieta">
-        <input type="hidden" name="user" value="<?php echo $_SESSION["USER"]["email"]; ?>" >
+        <input type="hidden" name="user" value="<?php echo $_SESSION["USER"]["email"]; ?>">
         <div class="form-row justify-content-md-center">
             <div class="form-group col-6">
                 <label for="name">Nome</label>
@@ -23,9 +23,9 @@ $keepNotLogged = true;
         </div>
 
         <div class="form-row justify-content-md-center">
-            
+
             <button type="submit" class="btn btn-primary">Cadastrar</button>
-            
+
         </div>
     </form>
 
@@ -36,4 +36,5 @@ $keepNotLogged = true;
 
 
 </body>
+
 </html>

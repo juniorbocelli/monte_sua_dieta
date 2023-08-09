@@ -17,7 +17,7 @@ $keepNotLogged = false;
             <div class="form-row justify-content-md-center">
                 <div class="form-group col-4">
                     <label for="email">E-mail</label>
-                    <input id="email" type="email" name="email" value="<?php if(isset($_SESSION['flash'])) echo $_SESSION['flash']['email'] ?>" class="form-control" aria-describedby="emailHelp" placeholder="Digite seu e-mail">
+                    <input id="email" type="email" name="email" value="<?php if (isset($_SESSION['flash'])) echo $_SESSION['flash']['email'] ?>" class="form-control" aria-describedby="emailHelp" placeholder="Digite seu e-mail">
                     <small id="emailHelp" class="form-text text-muted">Digite um e-mail válido.</small>
                 </div>
             </div>
@@ -43,4 +43,5 @@ $keepNotLogged = false;
 
 
 </body>
+
 </html>

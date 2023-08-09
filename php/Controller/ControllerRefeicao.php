@@ -11,4 +11,3 @@ class ControllerRefeicao {
         require_once $_SESSION['root']."php/View/ViewCadastraRefeicao.php";
     }
 }
-?>

@@ -21,13 +21,13 @@ $keepNotLogged = true;
     <form class="form-horizontal" action="postCadastraAlimento" method="POST">
         <div class="row">
             <div class="col-sm-5">
-                
+
                 <div class="form-group">
                     <label class="control-label col-sm-2" for="nome">Nome:</label>
                     <div class="col-sm-10">
                         <input type="text" class="form-control dadosColetados" name="nome">
                     </div>
-                </div>       
+                </div>
                 <div class="form-group">
                     <label class="control-label col-sm-2" for="Proteinas">Proteinas:</label>
                     <div class="col-sm-10">
@@ -51,7 +51,7 @@ $keepNotLogged = true;
                     <div class="col-sm-10">
                         <input type="text" class="form-control dadosColetados" id="fib" name="Fibra">
                     </div>
-                </div>                            
+                </div>
             </div>
             <div class="col-sm-5">
 
@@ -65,18 +65,18 @@ $keepNotLogged = true;
                 <div class="form-group">
                     <label class="control-label col-sm-2" for="Calorias">Calorias:</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control dadosColetados" id="kcal" name="Calorias" readonly >
+                        <input type="text" class="form-control dadosColetados" id="kcal" name="Calorias" readonly>
                     </div>
                 </div>
-            <div class="form-group">        
-                <div class="col-sm-offset-2 col-sm-10">
-                    <button type="button" class="btn btn-primary" value="calcular" name="calcular" id="calcular">Calcular</button>
-                    <button type="submit" class="btn btn-primary" value="criar" name="criar" id="criar" style="display:none">Cadastrar Novo</button>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="button" class="btn btn-primary" value="calcular" name="calcular" id="calcular">Calcular</button>
+                        <button type="submit" class="btn btn-primary" value="criar" name="criar" id="criar" style="display:none">Cadastrar Novo</button>
+                    </div>
                 </div>
             </div>
-            </div>
         </div>
-        
+
     </form>
 </section>
 
@@ -87,17 +87,18 @@ $keepNotLogged = true;
 <?php include("includes/footer.php"); ?>
 
 <script>
-$("#calcular").click(function(){
-        proteina = parseFloat($("#prot").val() )
-        carbo = parseFloat($("#carbo").val() )
-        gordura = parseFloat($("#gordu").val() )
-        fibra = parseFloat($("#fib").val() )
-        $("#kcal").val( proteina*4+carbo*4+gordura*9)
-        $("#umi").val( 100-(proteina+carbo+gordura+fibra))
+    $("#calcular").click(function() {
+        proteina = parseFloat($("#prot").val())
+        carbo = parseFloat($("#carbo").val())
+        gordura = parseFloat($("#gordu").val())
+        fibra = parseFloat($("#fib").val())
+        $("#kcal").val(proteina * 4 + carbo * 4 + gordura * 9)
+        $("#umi").val(100 - (proteina + carbo + gordura + fibra))
         $("#calcular").hide()
         $("#criar").show()
-});
+    });
 </script>
 
 </body>
+
 </html>

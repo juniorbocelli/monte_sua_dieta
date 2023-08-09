@@ -42,4 +42,3 @@ class ModelDieta {
         return $this->name;
     }
 }
-?>
