@@ -14,3 +14,7 @@ Para este sistema, foi usado o XAMPP [link](https://www.apachefriends.org/pt_br/
 
  1. Configurar o caminho para o local onde o servidor foi instalado, no arquivo *index.php*;
  2. Verificar as configurações de conexão do MySQL no arquivo *php/Configuration/dataBaseConfig.ini.php*, caso esteja usando o XAMPP, ou configurar os dados de conexão dentro da própria classe em *index.php*.
+
+ ## Heroku
+
+ A API usada para consulta dos dados dos alimentos estava armazenada do Heroku, que agora se tornou pago. Por esse motivo a consulta de alimentos não funcionará.
